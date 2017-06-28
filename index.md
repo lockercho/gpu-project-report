@@ -31,5 +31,30 @@ Algorithm
 Code Architecture
 --
 
+![](architecture.png)
+
+- **Decoder:**
+	- OpenCV to read frames from mp4 file
+- **Stabilizer:**
+   - Cubic map: OpenCV remap() to convert frames to cubic map 
+   - Rotation estimation: OpenCV feature extraction & optical flow to estimate transform on cubic map
+   - Refining Rotations: Ceres Optimizer library to optimize R using Jacobian
+   - Barycentric Coordinate Transform: Use quaternion on Barycentric Coordinate to do Rotation matrix interpolation
 
 
+Difficulties
+-
+1. The paper is so rough and it assumes a lot of background knowledges. It contains only 9 pages but it's really a complicated system. We have to keep guessing & googling to understand the concepts in this paper.
+2. To handle operations on sphere we have to do lots of coordinate transforming. 
+
+   
+   
+What we achieved
+-
+- An offline 360◦ Video Stabilization tool (flie in, file out)
+
+
+What we haven't done
+-
+- Realtime stabilization process
+- Interest point (User's intent) detection
