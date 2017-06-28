@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+360◦ Video Stabilization
+==
+p05922002 Pei-Ya Chiu
 
-You can use the [editor on GitHub](https://github.com/lockercho/gpu-project-report/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+Motivation
+--
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- 360◦ 攝影機的硬體在去年與今年開始在消費者市場有銷量成長。
+- Facebook 及 Youtube 都已針對 360◦ 影像推出了 VR 觀看模式，未來會有越來越多的人使用此種攝影機產製大量的 360◦ 影像。
 
-```markdown
-Syntax highlighted code block
+Challenges with current 360 video
+-- 
 
-# Header 1
-## Header 2
-### Header 3
+1. 經常無法將兩個鏡頭的畫面 stitch 的很好。
+2. 兩個鏡頭由於面向角度相反，進光量經常會差很多，鏡頭白平衡的值是不一樣的，大多數軟體的 blending 不夠好。
+3.  由於 360◦ 攝影機可以保證將所有事物收入鏡頭，因此**使用者傾向於隨意拍攝而非專注攝影，手震的機會比較大。**
+4. 經常搭配 VR 眼鏡觀看，對**影像的穩定度需求比較大。**
 
-- Bulleted
-- List
+我們 focus 在問題 3, 4，實作了 **Johannes Kopf** 提出的 **360◦ Video Stabilization** 演算法。
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+Algorithm
+--
+[Paper](http://dl.acm.org/citation.cfm?id=2982405)
 
-[Link](url) and ![Image](src)
-```
+[Blog](https://code.facebook.com/posts/697469023742261/360-video-stabilization-a-new-algorithm-for-smoother-360-video-viewing/)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+Code Architecture
+--
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lockercho/gpu-project-report/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
