@@ -44,7 +44,10 @@ Code Architecture
 
 Difficulties
 -
-1. The paper is so rough and it assumes a lot of background knowledges. It contains only 9 pages but it's really a complicated system. We have to keep guessing & googling to understand the concepts in this paper.
+1. The paper is so rough and it assumes a lot of background knowledges like:
+	-  Quaternion and Barycentric Coordinates
+	
+	It contains only 9 pages but it's really a complicated system. We have to keep guessing & googling to understand the concepts in this paper.
 2. To handle operations on sphere we have to do lots of coordinate transforming. 
 
    
