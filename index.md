@@ -83,5 +83,5 @@ What we haven't done
 
 Reference 
 -
-[Github](https://github.com/lockercho/stabilization-for-360) 
+Our Source Code: [Github](https://github.com/lockercho/stabilization-for-360) 
 
