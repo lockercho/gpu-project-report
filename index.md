@@ -79,3 +79,9 @@ What we haven't done
 -
 - Realtime stabilization process
 - Interest point (User's intent) detection
+
+
+Reference 
+-
+[Github](https://github.com/lockercho/stabilization-for-360) 
+
