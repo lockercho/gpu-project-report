@@ -23,6 +23,24 @@ Challenges with current 360 video
 
 Algorithm
 --
+
+![](algorithm.jpg)
+
+
+Getting R (aggregated rotation inverse):
+
+<img src="R.png" height="80px"/>
+
+Smoothing R by optimizing two error function:
+
+<img src="E1.png" height="80px"/>, 
+
+<img src="E2.png" height="80px"/>
+
+
+
+Details are in parper:
+
 [Paper](http://dl.acm.org/citation.cfm?id=2982405)
 
 [Blog](https://code.facebook.com/posts/697469023742261/360-video-stabilization-a-new-algorithm-for-smoother-360-video-viewing/)
